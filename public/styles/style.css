@@ -1,0 +1,135 @@
+html, body,div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;    
+}
+
+h1,h2{
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a{
+    cursor: pointer;        
+}
+
+.portal-rastreabilidade{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+
+    background-image: url('https://i.imgur.com/oKDnE5W.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*NavBar*/
+
+.navbar-container{
+    display: flex;
+    ;    
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    list-style:none;    
+}
+.navitem{
+    background: #f7f7f7;
+    padding: 4vh 2vw;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navitem-casdastro{
+    background: rgb(197, 59, 59);
+}
+
+.cadastro{
+    color:white;
+}
+
+/* Content Home */
+.content{
+    display:flex;
+    flex:1;
+}
+
+.home-header{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    padding-left: 8vw;
+}
+
+.portal{
+    
+    color: rgb(197, 59, 59);
+    font-weight: 900;
+    font-size: calc(20px + 5vmin);
+    margin-top: 5vh ;  
+    
+    text-shadow: 1px 1px 1px #000
+}
+
+.rastreabilidade{
+    color: white;
+    font-weight: 900;
+    font-size: calc(40px + 7vmin);
+    
+    
+    text-shadow: 1px 1px 1px #000;
+}
+
+/*footer bar*/
+
+.footerbar{
+    display: flex;    
+    justify-content: center;    
+}
+
+.footerleft{
+    
+    padding:2vh 1vw 8vh 1vw;
+    background: #f7f7f7;
+    border-radius: 20px 0 0 0;
+    
+
+}
+
+.footerright{
+    text-align: end;
+    padding: 2vh 1vw 8vh 1vw;
+    background: #ddd;
+    background: rgba(221, 221, 221, 0.705);
+    background: #dddddda1;
+
+    border-radius: 0 20px 0 0
+}
