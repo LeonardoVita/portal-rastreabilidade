@@ -107,11 +107,11 @@ a{
     color: rgb(197, 59, 59);
     font-weight: 900;
     font-size: calc(20px + 2vw);
-    margin-top: 15vh ;
-    margin-bottom: 6vh;  
+    margin-top: 10vh ;
+    margin-bottom: 4vh;  
     
     text-shadow: 1px 1px 1px #000;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     
 }
 
@@ -120,7 +120,7 @@ a{
     font-weight: 900;
     font-size: calc(40px + 4vw);   
     text-shadow: 1px 1px 1px #000;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
 
 /*footer bar*/
@@ -139,7 +139,10 @@ a{
     
 
 }
-
+.footerleft-texto{
+    display: flex;
+    flex-direction: row;
+}
 .foooterleft-img-content{
     float: right;
 }
@@ -147,6 +150,7 @@ a{
 
 
 .footerright{
+    display: flex;
     text-align: end;
     padding: 2vh 1vw 10px 1vw;
     background: #ddd;
@@ -160,14 +164,24 @@ a{
     .home-header{        
         padding-left: 10px;
     }
+    .navitem-casdastro > span{
+        display: none;
+    }
+
     .portal{
-        margin-top: 18vh;
-        margin-bottom: 3vh;
-        font-size: calc(20px + 1.5vw);          
+        margin-top: 15.5vh;
+        margin-bottom: 1vh;
+        font-size: calc(20px + 2vw);          
     }
     
     .rastreabilidade{        
-        font-size: calc(30px + 2.5vw); 
+        font-size: calc(35px + 1vw); 
+    }
+    .footerright{
+        flex-direction: column;
+    }
+    .footerleft-texto{    
+        flex-direction: column;   
     }
 
 }
