@@ -106,19 +106,21 @@ a{
     
     color: rgb(197, 59, 59);
     font-weight: 900;
-    font-size: calc(20px + 5vmin);
-    margin-top: 5vh ;  
+    font-size: calc(20px + 2vw);
+    margin-top: 15vh ;
+    margin-bottom: 6vh;  
     
-    text-shadow: 1px 1px 1px #000
+    text-shadow: 1px 1px 1px #000;
+    transform: translateY(-100%);
+    
 }
 
 .rastreabilidade{
     color: white;
     font-weight: 900;
-    font-size: calc(40px + 7vmin);
-    
-    
+    font-size: calc(40px + 4vw);   
     text-shadow: 1px 1px 1px #000;
+    transform: translateY(-100%);
 }
 
 /*footer bar*/
@@ -152,4 +154,27 @@ a{
     background: #dddddda1;
 
     border-radius: 0 20px 0 0
+}
+
+@media (max-width : 700px){
+    .home-header{        
+        padding-left: 10px;
+    }
+    .portal{
+        margin-top: 18vh;
+        margin-bottom: 3vh;
+        font-size: calc(20px + 1.5vw);          
+    }
+    
+    .rastreabilidade{        
+        font-size: calc(30px + 2.5vw); 
+    }
+
+}
+
+@media (max-height : 600px){
+    
+    .background-corte{       
+       display: none;
+    }
 }
