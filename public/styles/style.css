@@ -117,16 +117,22 @@ a{
 
 .footerleft{
     
-    padding:2vh 1vw 8vh 1vw;
+    padding:2vh 1vw 10px 1vw;
     background: #f7f7f7;
     border-radius: 20px 0 0 0;
     
 
 }
 
+.foooterleft-img-content{
+    float: right;
+}
+
+
+
 .footerright{
     text-align: end;
-    padding: 2vh 1vw 8vh 1vw;
+    padding: 2vh 1vw 10px 1vw;
     background: #ddd;
     background: rgba(221, 221, 221, 0.705);
     background: #dddddda1;
