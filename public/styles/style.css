@@ -42,11 +42,24 @@ a{
     background-position: center;
 }
 
+.background-corte{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://i.imgur.com/2ImRW7D.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
 /*NavBar*/
 
 .navbar-container{
     display: flex;
-    ;    
+    z-index: 2;    
     justify-content: center;
 }
 
@@ -112,7 +125,8 @@ a{
 
 .footerbar{
     display: flex;    
-    justify-content: center;    
+    justify-content: center; 
+    z-index: 2;   
 }
 
 .footerleft{
