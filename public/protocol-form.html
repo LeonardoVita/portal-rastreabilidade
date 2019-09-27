@@ -58,45 +58,63 @@
                 <div class="protocol-form-inner">
                     <div class="form">
                         <h2>Formulário</h2>
-                        <form>
-                            <div>
-                                <label for="caixa1">Caixa1</label>
-                                <select name="caixa1">
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2" selected>Valor 2</option>
-                                    <option value="valor3">Valor 3</option>
-                                </select>
+
+                        <form class="form-container">
+
+                            <!-- CAIXA CONTAINERS -->
+                            <div class="form-caixa-container">
+                                <div class="caixa-container">
+                                    <label for="caixa1">Caixa1</label>
+                                    <select name="caixa1">
+                                        <option value="valor1">Valor 1</option>
+                                        <option value="valor2" selected>Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <label for="caixa2">Caixa2</label>
-                                <select name="caixa2">
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2" selected>Valor 2</option>
-                                    <option value="valor3">Valor 3</option>
-                                </select>
+                            <div class="form-caixa-container">
+                                <div class="caixa-container">
+                                    <label for="caixa2">Caixa2</label>
+                                    <select name="caixa2">
+                                        <option value="valor1">Valor 1</option>
+                                        <option value="valor2" selected>Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <label for="date">Caixa3</label>
-                                <div>
+                            <!-- DATES CONTAINERS  -->
+                            <div class="form-date-container">
+                                <div class="date-container">
+                                    <label for="date">Date1 ( DE )</label>
                                     <input type="date" id="data1" />
+                                </div>
+                                <div class="date-container">
+                                    <label for="date">Date2 ( ATÉ )</label>
                                     <input type="date" id="data2" />
                                 </div>
                             </div>
-                            <div>
-                                <div>
+
+                            <!-- TEXT CONTAINERS  -->
+                            <div class="form-text-container">
+                                <div class="text-container">
                                     <label for="text1">texto1</label>
                                     <input type="text" id="text1" />
                                 </div>
-                                <div>
+                                <div class="text-container">
                                     <label for="text2">texto2</label>
                                     <input type="text" id="text2" />
                                 </div>
-                                <div>
+                                <div class="text-container">
                                     <label for="text3">texto1</label>
                                     <input type="text" id="text3" />
                                 </div>
                             </div>
-                            <input type="submit" value="Submit">
+
+                            <!-- SUBMIT CONTAINER  -->
+                            <div class="form-submit-container">
+                                <input type="submit" value="Submit">
+                            </div>
+
                         </form>
                     </div>
                 </div>
