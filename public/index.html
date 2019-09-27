@@ -1,53 +1,94 @@
-<head>
+<!DOCTYPE html>
+<html lang=”pt-br”>
 
+<head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <!-- <link rel="shortcut icon" href="./src/icons/fav.ico" /> -->
   <title>Portal Rastreabilidade</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
-
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/protocol-form.css'>
 </head>
-  <body>      
-    <div class="portal-rastreabilidade" id="portal-rastreabilidade">
-      <div class="background-corte"></div>
-      <nav class="navbar-container">
+
+<body>
+
+  <div class="portal-rastreabilidade" id="portal-rastreabilidade">
+    <div class="background-corte"></div>
+
+    <!-- HEADER NAVEGATION -->
+    <div class="header">
+      <div class="header-margin-left"></div>
+
+      <div class="header-content">
+
         <ul class="navbar">
-          <a class="navlink"> <li class="navitem">ínicio</li> </a>
-          <a class="navlink"> <li class="navitem">Sobre</li> </a>
-          <a class="navlink"> <li class="navitem">Contato</li> </a>
-          <a class="cadastro navlink"> <li class="navitem navitem-casdastro"><span>CADASTRE SEU</span> PROTOCOLO</li> </a>
+          <a class="nav-link" onclick="showHome()">
+            <li class="nav-item">
+              <p>ínicio</p>
+            </li>
+          </a>
+          <a class="nav-link">
+            <li class="nav-item">
+              <p>Sobre</p>
+            </li>
+          </a>
+          <a class="nav-link">
+            <li class="nav-item">
+              <p>Contato</p>
+            </li>
+          </a>
+          <a class="cadastro nav-link" onclick="showProtocol()">
+            <li class="nav-item nav-item-casdastro">
+              <p><span>CADASTRE SEU &nbsp;</span> PROTOCOLO</p>
+            </li>
+          </a>
         </ul>
-      </nav>
-      
-      <div class="content">
-        <div class="home-header">
-          <div class="home-header-content">
-            <h1 class="portal">Portal</h1>
-            <h2 class="rastreabilidade">Rastreabilidade</h2>
-          </div>
-        </div>        
-      </div>
-      
-      <div class="footerbar">
-          <div class="footerleft">
-            <div class="footerleft-texto">
-              <p>Consulta de dados </p>
-              <p>em um só lugar</p>
-            </div>
-            <div class="foooterleft-img-content">
-              <img src="./src/icons/boi.svg">
-              <img src="./src/icons/Lupa.svg">
-            </div>
-          </div>
 
-          <div class="footerright">
-            <p>Consulta de dados </p>
-            <p>em um só lugar</p>              
-          </div>
       </div>
 
-    </div>     
-    <script src="./main.js"></script>
-  </body>
+      <div class="header-margin-right"></div>
+    </div>
+
+    <!-- SITE CONTENT  -->
+    <div class="content">
+      <div class="content-margin-left"></div>
+
+      <div class="content-inner">
+        <h1>Portal <br><span>Rastreabilidade</span></h1>
+      </div>
+
+      <div class="content-margin-right"></div>
+    </div>
+
+    <!-- FOOOTER ICONS  -->
+    <div class="footer">
+      <div class="footer-margin-left"></div>
+
+      <div class="footer-inner">
+        <div class="footerleft">
+          <div class="footerleft-texto">
+            <p>Consulta de dados em um só luga</p>
+
+          </div>
+          <div class="foooterleft-img-content">
+            <img class="footer-img" src="./src/icons/boi.svg">
+            <img class="footer-img" src="./src/icons/Lupa.svg">
+          </div>
+        </div>
+
+        <div class="footerright">
+          <p>Consulta de dados em um só lugar </p>
+
+        </div>
+      </div>
+
+      <div class="footer-margin-right"></div>
+    </div>
+
+  </div>
+  <script src="./main.js"></script>
+</body>
+
 </html>

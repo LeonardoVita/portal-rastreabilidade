@@ -1,0 +1,15 @@
+
+.protocol-form{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+}
+
+.protocol-form-container{
+    background: #ddd;
+    width: 60vw;
+}
