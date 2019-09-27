@@ -1,0 +1,50 @@
+.portal-rastreabilidade{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+
+    background-image: url('https://i.imgur.com/oKDnE5W.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.background-corte{
+    display: none;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-image: url('https://i.imgur.com/2ImRW7D.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    
+    
+}
+.home-margin-left{
+    flex:1;
+    
+}
+.home-inner{
+    flex:10;
+      
+}
+.home-inner > h1 {
+    color: rgb(207, 13, 13);
+    font-size: calc(20px + 5vw );
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 2vh;
+}
+.home-inner > h1 > span{
+    color: #fff;
+}
+.home-margin-right{
+    flex:1;
+    
+}

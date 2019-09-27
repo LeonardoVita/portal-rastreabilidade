@@ -1,15 +1,28 @@
 
+#protocol-form-container{
+    display: none;
+}
+.portal-rastreabilidade{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+
+    background-color: forestgreen;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}   
+
 .protocol-form{
     display: flex;
     flex: 1;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
     
 }
 
-.protocol-form-container{
-    background: #ddd;
-    width: 60vw;
-}

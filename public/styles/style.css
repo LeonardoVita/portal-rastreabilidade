@@ -32,23 +32,16 @@ h1,h2{
 }
 
 a{
-    cursor: pointer;        
+    cursor: pointer; 
+    text-decoration: none; /* no underline */       
+}
+a:visited{
+    color: currentColor;
 }
 
-.portal-rastreabilidade{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-height: 100vh;
-
-    background-image: url('https://i.imgur.com/oKDnE5W.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
 
 .background-corte{
+    display: none;
     position: absolute;
     top:0;
     bottom: 0;
@@ -67,9 +60,8 @@ a{
 
 .header{
     z-index: 2;
-    display: flex;
-    flex:10;
-        
+    display: flex;   
+    height: 10vh;    
 }
 
 .header-margin-left{
@@ -133,7 +125,9 @@ a{
     color:white;
     font-weight: 900;  
 }
-
+.cadastro:visited{
+    color:white; 
+}
 .nav-item >p{
     display:flex;
     flex-direction: row;
@@ -141,48 +135,28 @@ a{
 }
 
 .header-margin-right{
-    flex:1;
-    
+    flex:1;    
+
 }
 
-
+#home{
+    display: flex;
+    flex: 1;    
+}
     /* CONTENT  */
 
 .content{    
-    display: flex;
-    flex:80;
-        
-}
-
-.content-margin-left{
-    flex:1;
-    
-}
-.content-inner{
-    flex:10;
-      
-}
-.content-inner > h1 {
-    color: rgb(207, 13, 13);
-    font-size: calc(20px + 5vw );
-    text-shadow: 1px 1px 1px #000;
-    margin-top: 2vh;
-}
-.content-inner > h1 > span{
-    color: #fff;
-}
-.content-margin-right{
-    flex:1;
-    
+    display: flex;    
+    height: 75vh;    
 }
 
     /* FOOTER  */
 
 .footer{  
-          
+    height: 15vh;      
     z-index: 2;
     display: flex;
-    flex:5;
+    
     flex-direction: row;
     
     
