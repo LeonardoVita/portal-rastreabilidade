@@ -8,21 +8,45 @@
     flex: 1;
     min-height: 100vh;
 
-    background-color: forestgreen;
+    background-color: rgb(123, 212, 123);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
-}   
-
-.protocol-form{
+} 
+.content{    
+    display: flex;    
+    height: 90vh;    
+}  
+.protocol-form-margin-left{
+    flex:1
+}
+.protocol-form-inner{
     display: flex;
-    flex: 1;
+    flex: 4;
     height: 100%;
     align-items: center;
     justify-content: center;
-    z-index: 3;
-    
+        
 }
 
+.protocol-form-margin-right{
+    flex:1
+}
+
+.form{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    background: #f7f7f7;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 2px 0 0 0;
+    border-color: green;
+    border-style: solid;
+
+    box-shadow: 0 0 10px #000;
+}

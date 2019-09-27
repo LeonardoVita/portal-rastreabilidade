@@ -37,25 +37,10 @@ a{
     color:inherit;       
 }
 a:visited{
-    color: inherit;
-}
+    color: inherit;}
 
 
-.background-corte{
-    display: none;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url('https://i.imgur.com/2ImRW7D.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-    
-    
-}
+
 
 /* HEADER */
 
@@ -95,6 +80,8 @@ a:visited{
     -ms-user-select: none;
     user-select: none;
     list-style:none;
+
+    box-shadow: 0 0 5px #000;
     
 }
 .nav-link{    
@@ -159,8 +146,7 @@ a:visited{
 .footer{  
     height: 15vh;      
     z-index: 2;
-    display: flex;
-    
+    display: flex;    
     flex-direction: row;
     
     

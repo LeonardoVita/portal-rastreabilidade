@@ -11,8 +11,7 @@
     
 }
 
-.background-corte{
-    display: none;
+.background-corte{    
     position: absolute;
     top:0;
     bottom: 0;
@@ -27,6 +26,7 @@
     
     
 }
+
 .home-margin-left{
     flex:1;
     
@@ -37,13 +37,19 @@
 }
 .home-inner > h1 {
     color: rgb(207, 13, 13);
+    font-size: calc(15px + 5vw );
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 3vh;
+}
+.home-inner > h2 {
+    color: white;
     font-size: calc(20px + 5vw );
     text-shadow: 1px 1px 1px #000;
-    margin-top: 2vh;
+    margin:0;
+
+    transform: translateY(-20%);
 }
-.home-inner > h1 > span{
-    color: #fff;
-}
+
 .home-margin-right{
     flex:1;
     
