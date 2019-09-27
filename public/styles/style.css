@@ -66,7 +66,7 @@ a:visited{
     flex-direction: row;
 
     width: 100%;
-    max-width: 700px;
+    
     height: 100%;
 
     justify-content: space-around;
@@ -160,7 +160,7 @@ a:visited{
     flex:3;
     display: flex;    
     flex-direction: row;
-    max-width: 700px;
+    
     min-width: 320px; 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -188,9 +188,10 @@ a:visited{
 }
 
 .footerright{
-    
+        
     flex:1;
     display: flex;
+    justify-content: flex-end;
     text-align: end;
     padding: 2vh 1vw 10px 1vw;
 

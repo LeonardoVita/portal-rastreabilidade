@@ -1,4 +1,8 @@
 
+#protocol-form{
+    display: flex;
+    flex: 1;    
+}
 #protocol-form-container{
     display: none;
 }
@@ -48,8 +52,32 @@
     border-color: green;
     border-style: solid;
 
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;    
 }
+
+select{
+    background: #fff;
+    
+    padding: 5px;
+    font-size: calc(10px + 1vw);
+    color: #aaa;
+    font-weight: 900;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ddd;
+    height: 34px;
+    -webkit-appearance: none;
+}
+input[type=text], input[type=date]{   
+    border-style: none;
+    box-shadow: 0 0 2px #000;    
+    -moz-box-shadow: 0 0 2px #000;
+    -webkit-box-shadow: 0 0 2px #000;
+    height: 4vh; 
+    
+}
+
+
 .form-container{
     display: flex;
     flex:1;
@@ -59,7 +87,9 @@
     margin-top: 1vh;
     
     justify-content: space-between;
+    font-size: calc(20px + 1vw)
 }
+
 
 .form-caixa-container{
     display: flex;    
@@ -75,6 +105,7 @@
 }
 label{
     margin-bottom: 2vh;
+    font-size: calc(10px + 1vw) ;
 }
 .form-date-container{
     display: flex;
@@ -104,4 +135,39 @@ label{
     display: flex;   
     justify-content: center;    
     transform: translateY(50%);
+}
+.btn-submit{
+    padding: 1vh 4vw;
+    border-radius: 15px;
+    border-style: none;
+    background: green;
+    color:white;
+    font-size: calc(10px + 1vw);
+    font-weight: 900;
+
+    transition: all 0.2s;
+}
+.btn-submit:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.btn-submit:hover{
+    cursor: pointer; 
+}
+
+.link-merlion{
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+}
+.link-merlion:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); 
+}
+.text-merlion{
+    font-size: calc(8px + 1vw);
+    color:#000;
+    
 }
