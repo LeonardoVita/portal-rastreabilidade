@@ -37,7 +37,7 @@ a{
     color:inherit;       
 }
 a:visited{
-    color: currentColor;
+    color: inherit;
 }
 
 
@@ -123,10 +123,13 @@ a:visited{
 }
 .cadastro{
     background: green;
-    color:white;
+    
     font-weight: 900;  
 }
-.cadastro:visited{
+.nav-item-casdastro{
+    color:white; 
+}
+.nav-item-cadastro:visited{
     color:white; 
 }
 .nav-item >p{
