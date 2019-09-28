@@ -27,10 +27,11 @@
 }
 .logo-portal > h1{
     color:red;
-    text-shadow: 1px 1px 0 #000;
+    font-weight: 800;
+    font-style: italic;
 }
 .logo-portal > h2{    
-    text-shadow: 1px 1px 0 #000
+    font-weight: 800;
 }
 
 .content{    

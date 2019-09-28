@@ -60,45 +60,40 @@
 
                 <div class="resultados-inner">
                     <div class="table-container">
-                        <h2>Resultados</h1>
-                            <div class="table-header">
-                                <div class="process-container">
-                                    <h3>PROCESSO</h3>
-                                    <input type="text" name="processo" id="processo" />
-                                </div>
-                                <div class="data-container">
-                                    <h3>DATA</h3>
-                                    
-                                        <div >
-                                            <p>De</p>
-                                            <input type="date" name="data-de" id="data-de" />
-                                        </div>
-                                        <div>
-                                            <p>Até</p>
-                                            <input type="date" name="data-ate" id="data-ate" />
-                                        </div>
-                                    
-                                </div>
-                                <div class="estado-container">
-                                    <h3>ESTADO</h3>
-                                    <select name="estado" id="estado">
-                                        <option value="Rio de janeiro">Rio de janeiro</option>
-                                        <option value="São Paulo">São Paulo</option>
-                                        <option value="Mato Grosso" selected>Mato Grosso</option>
-                                    </select>
-                                </div>
-                                <div class="estatus-container">
-                                    <h3>ESTATUS</h3>
-                                    <select name="estatus" id="estatus">
-                                        <option value="concluido">Concluído</option>
-                                        <option value="espera">Em espera</option>
-                                        <option value="recusado" selected>Recusado</option>
-                                    </select>
-                                </div>
-                                <div class="empty-container"></div>
+                        <h2>Resultados</h2>
+                        <div class="table-header">
+                            <div class="process-container">
+                                <h3>PROCESSO</h3>
+                                <input type="text" name="processo" id="processo" placeholder="Um texto aqui"/>
                             </div>
+                            <div class="data-container">
+                                <h3>DATA</h3>
+                                <div class="date-input-container">
+                                    <input type="date" name="data-de" id="data-de" placeholder="Data Inicial"/>
+                                    <input type="date" name="data-ate" id="data-ate" placeholder="Data Final"/>
+                                </div>
+                            </div>
+                            <div class="estado-container">
+                                <h3>ESTADO</h3>
+                                <select name="estado" id="estado">
+                                    <option value="Rio de janeiro">Rio de janeiro</option>
+                                    <option value="São Paulo">São Paulo</option>
+                                    <option value="Mato Grosso" selected>Mato Grosso</option>
+                                </select>
+                            </div>
+                            <div class="estatus-container">
+                                <h3>ESTATUS</h3>
+                                <select name="estatus" id="estatus">
+                                    <option value="concluido">Concluído</option>
+                                    <option value="espera">Em espera</option>
+                                    <option value="recusado" selected>Recusado</option>
+                                </select>
+                            </div>
+                            <div class="empty-container"></div>
+                        </div>
                     </div>
-                    <label>Voltar</label>
+                    <a class="btn-voltar"><label >Voltar</label></a>
+
                 </div>
 
                 <div class="resultados-margin-right"></div>
