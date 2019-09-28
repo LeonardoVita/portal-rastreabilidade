@@ -1,30 +1,29 @@
-function showProtocol(){ 
-    document.querySelector(".portal-rastreabilidade").style.background = 'none'; 
-    document.querySelector(".background-corte").style.background = "none";  
-    document.querySelector(".footer").style.display = "none"; ; 
+var footerleft = document.getElementById("footerleft");
+var footerright = document.getElementById("footerright");
 
-    document.getElementById('protocol-form-container').style.display = "flex";
-    document.getElementById('home').style.display = "none";
-     
+footerleft.addEventListener("mouseover", footerLeftMouseOver);
+footerleft.addEventListener("mouseout", footerLeftMouseOut);
+
+footerright.addEventListener("mouseover", footerRightMouseOver);
+footerright.addEventListener("mouseout", footerRightMouseOut)
+
+
+
+function footerLeftMouseOver() {
+    footerright.style.filter = "blur(4px)";
+}
+
+function footerLeftMouseOut() {
+    footerright.style.filter = "blur(0)";
 }
 
 
-function showHome(){ 
 
-    let portalRastreabilidade = document.querySelector(".portal-rastreabilidade");   
-    portalRastreabilidade.style.backgroundImage = "url('https://i.imgur.com/oKDnE5W.jpg')";
-    portalRastreabilidade.style.backgroundRepeat = "no-repeat";
-    portalRastreabilidade.style.backgroundSize = "cover";
-    portalRastreabilidade.style.backgroundPosition = "center";
-    
+function footerRightMouseOver() {
+    footerleft.style.filter = "blur(4px)";
+}
 
-    let backgroundCorte = document.querySelector(".background-corte");
-    backgroundCorte.style.background = "url('https://i.imgur.com/2ImRW7D.png')"; 
-    backgroundCorte.style.backgroundRepeat = "no-repeat";
-    backgroundCorte.style.backgroundSize = "cover";
-    backgroundCorte.style.backgroundPosition = "center"; 
-
-    document.querySelector(".footer").style.display = "flex";        
-       
+function footerRightMouseOut() {
+    footerleft.style.filter = "blur(0)";;
 }
 
