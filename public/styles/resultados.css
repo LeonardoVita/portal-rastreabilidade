@@ -45,6 +45,8 @@
     padding: 10px;
     margin-left: 5px;
 
+    font-weight: 800;
+
 }
 .table-header{
     padding:10px;
@@ -65,17 +67,17 @@ input[type=text]{
 }
 
 .process-container{
-    flex:2;
+    flex:5;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 10px 5px;
 }
 
 .data-container{
-    flex:3;
+    flex:6;
     
     display: flex;
     flex-direction: column;
@@ -90,7 +92,12 @@ input[type=text]{
     
 }
 #data-de{
-  margin-right: 10px;  
+  margin-right: 10px; 
+  font-size: calc(5px + 0.5vw); 
+}
+#data-ate{
+     
+    font-size: calc(5px + 0.5vw); 
 }
 input{
     border-style: none;
@@ -98,15 +105,15 @@ input{
     box-shadow: -1px 1px 5px #aaa;    
     -moz-box-shadow: -1px 1px 5px #aaa;
     -webkit-box-shadow: -1px 1px 5px #aaa;
-
+    padding-left: 5px;
     border-style: none;       
-    color: #333;
+    color: #888;
     font-weight: 800;
     
 }
 select{
     height: 5vh;
-    width: 80%;
+    width: 90%;
     box-shadow: -1px 1px 5px #aaa;    
     -moz-box-shadow: -1px 1px 5px #aaa;
     -webkit-box-shadow: -1px 1px 5px #aaa;
@@ -123,7 +130,7 @@ select{
 }
 .estado-container{
     
-    flex:2;
+    flex:5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,7 +138,7 @@ select{
 }
 
 .estatus-container{
-    flex:2;
+    flex:5;
     
     display: flex;
     flex-direction: column;
@@ -139,15 +146,72 @@ select{
     padding: 10px 0;
 }
 .empty-container{
-    flex:1;
+    flex:3;
     
 }
-.btn-voltar{
-    padding: 2vh 5vw;
+
+.list-group-item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list-process{
+    flex:2;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-data{
+    flex:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-estado{
+    flex:2;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-stats{
+    flex:2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-details-container{
+    flex:1;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: calc(8px + 0.5vw);
+    font-weight: 800;
+    color:white;
     background: #0a780e;
+    padding: 0.5vh 0.3vw;
     border-radius: 15px;
-    margin: 2vh 0;
+}
+.btn-details-container label{
+    cursor: pointer;
+}
+
+
+.btn-voltar{
+    padding: 1vh 4vw;
+    background: #0a780e;
+    border-radius: 18px;
+    margin: 2vh 0 6vh 0;
+    
+    
+}
+.btn-voltar label{
     color: white;
     font-size: calc(5px + 1vw);
-    font-weight: 800;
+    font-weight: 800;  
 }

@@ -7,6 +7,8 @@
     <!-- <link rel="shortcut icon" href="./src/icons/fav.ico" /> -->
     <title>Portal Rastreabilidade</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,800i&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/resultados.css'>
@@ -23,7 +25,7 @@
 
             <div class="header-content">
 
-                <ul class="navbar">
+                <ul class="navbar-container">
                     <a class="nav-link" href="./index.html">
                         <li class="nav-item">
                             <p>ínicio</p>
@@ -64,13 +66,13 @@
                         <div class="table-header">
                             <div class="process-container">
                                 <h3>PROCESSO</h3>
-                                <input type="text" name="processo" id="processo" placeholder="Um texto aqui"/>
+                                <input type="text" name="processo" id="processo" placeholder="Um texto aqui" />
                             </div>
                             <div class="data-container">
                                 <h3>DATA</h3>
                                 <div class="date-input-container">
-                                    <input type="date" name="data-de" id="data-de" placeholder="Data Inicial"/>
-                                    <input type="date" name="data-ate" id="data-ate" placeholder="Data Final"/>
+                                    <input type="date" name="data-de" id="data-de" placeholder="Data Inicial" />
+                                    <input type="date" name="data-ate" id="data-ate" placeholder="Data Final" />
                                 </div>
                             </div>
                             <div class="estado-container">
@@ -91,8 +93,145 @@
                             </div>
                             <div class="empty-container"></div>
                         </div>
+                        <!-- BOOTSTRAP LISTA  -->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+
+                                <div class="list-process">
+                                    <p>50.00088/58</p>
+                                </div>
+
+                                <div class="list-data">
+                                    <p>20/08/2019</p>
+                                </div>
+
+                                <div class="list-estado">
+                                    <p>Rio de Janeiro</p>
+                                </div>
+
+                                <div class="list-stats">
+                                    <p>Concluido</p>
+                                </div>
+
+                                <div class="btn-details-container">
+                                    <label>Detalhes</label>
+                                </div>
+                            </a>
+
+                        </div>
+
                     </div>
-                    <a class="btn-voltar"><label >Voltar</label></a>
+                    <a class="btn-voltar"><label>Voltar</label></a>
 
                 </div>
 
@@ -100,11 +239,18 @@
             </div>
 
         </div>
-
-
-
     </div>
 
+    <!-- BOOTSTRAP  -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
