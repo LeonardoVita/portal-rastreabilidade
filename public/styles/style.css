@@ -17,9 +17,9 @@ time, mark, audio, video,span {
     font-family: 'Muli', sans-serif;    
 }
 
-/* html,body{
+html,body{
   overflow:hidden;  
-} */
+}
 
 h1,h2{
     white-space: nowrap;
