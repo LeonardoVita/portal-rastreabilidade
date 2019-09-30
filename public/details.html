@@ -66,13 +66,15 @@
                     <div class="details-container">
                         <div class="details-header">
                             <h2>Detalhes</h2>
-                            <div class="details-date">
-                                <p>De</p>
-                                <input type="date" name="details-date" id="details-date"/>
-                            </div>
-                            <div class="details-date">
-                                <p>Até</p>
-                                <input type="date" name="details-date" id="details-date"/>
+                            <div class="datails-date-container">
+                                <div class="details-date">
+                                    <p>De</p>
+                                    <input type="date" name="details-date" id="details-date" />
+                                </div>
+                                <div class="details-date">
+                                    <p>Até</p>
+                                    <input type="date" name="details-date" id="details-date" />
+                                </div>
                             </div>
                         </div>
                         <div class="details-info-container">
@@ -107,7 +109,89 @@
                             <div class="details-info">
                                 <h4>Objeto</h4>
                                 <p>texto mais longo aqui</p>
-                            </div>                            
+                            </div>
+                        </div>
+
+                        <!-- COLLAPSE BOOTSTRAP  -->
+                        <div class="collapse-container-scroll">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                        <h5 class="mb-0" >
+                                            Texto 1
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                        <h5 class="mb-0">
+                                            Texto 2
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                        <h5 class="mb-0">
+                                            Texto 3
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="btn-link-details" href="./result.html"><label class="btn-label-details">Voltar</label></a>
@@ -122,6 +206,10 @@
         </div>
     </div>
 
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 

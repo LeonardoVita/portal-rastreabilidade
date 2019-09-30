@@ -237,7 +237,7 @@ select{
 }
 
 .btn-voltar label{
-    padding: 1vh 4vw;
+    padding: 1.5vh 5vw;
     background: #0a780e;
     border-radius: 18px;
     margin: 2vh 0 6vh 0; 
@@ -296,7 +296,11 @@ select{
     .list-estado{
         display: none;        
     }
-
+    .btn-voltar label{
+        padding: 15px 40px;
+        font-size: calc(10px + 2vw);
+     
+    }
 }
 
 @media (max-width : 600px){ 
@@ -333,7 +337,7 @@ select{
     }
     .btn-voltar label{
         margin: 5vh 0 0 0; 
-        font-size: 10px ;  
+        font-size: 15px ;  
     }
     .list-group{
         overflow-y: auto;
