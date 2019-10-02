@@ -36,7 +36,8 @@
 
 .content{    
     display: flex;    
-    height: 90vh;    
+    height: 90vh;
+       
 }  
 .protocol-form-margin-left{
     flex:1
@@ -44,9 +45,12 @@
 .protocol-form-inner{
     display: flex;
     flex: 4;
-    height: 100%;
-    align-items: center;
+    padding: 5px;
+    padding-top: 5vh;
+
+    align-items: flex-start;
     justify-content: center;
+    overflow-y: auto;
         
 }
 
@@ -58,16 +62,13 @@
     display:flex;
     flex:1;
     flex-direction: column;
-    background: #f7f7f7;
-    height: 80%;
+    background: #f7f7f7;    
     align-items: center;
     justify-content: flex-start;
-    padding-top: 10px;
-    border-width: 2px 0 0 0;
-    border-color: #0a780e;
-    border-style: solid;
+    padding-top: 10px;    
 
-    box-shadow: 0 0 10px #000;    
+    box-shadow: 0 -4px 10px #0a780e;  
+      
 }
 
 select{
@@ -101,7 +102,8 @@ input[type=text], input[type=date]{
     box-shadow: 0 0 2px #000;    
     -moz-box-shadow: 0 0 2px #000;
     -webkit-box-shadow: 0 0 2px #000;
-    height: 4vh; 
+    /* height: 4vh; */
+    padding: 10px ; 
     
 }
 
@@ -116,7 +118,7 @@ input[type=text], input[type=date]{
 
 .form-container{
     display: flex;
-    flex:1;
+    
     flex-direction: column;
     width: 100%;
     
@@ -128,7 +130,8 @@ input[type=text], input[type=date]{
 
 
 .form-caixa-container{
-    display: flex;    
+    display: flex; 
+    justify-content: flex-start;   
     box-shadow: 0 2px 2px #0a780e;
     padding: 10px;
     padding-bottom: 4vh;
@@ -137,6 +140,7 @@ input[type=text], input[type=date]{
     display: flex;    
     flex-direction: column;
     width: 40%;
+   
     
 }
 label{
@@ -208,7 +212,7 @@ label{
     
 }
 
-@media (max-width : 800px){ 
+@media (max-width : 930px){ 
     .logo-portal{
         display: none;
     }
@@ -254,3 +258,19 @@ label{
     } 
 }
 
+@media (max-width : 530px){
+
+    .protocol-form-margin-left{
+        flex:0;
+        margin-right: 10px;
+    }
+    .protocol-form-margin-right{
+        flex:0;
+        margin-left: 10px;
+    }
+    input[type=date]{ 
+        
+        padding: 2px;
+        
+    }
+}   
