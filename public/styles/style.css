@@ -221,6 +221,22 @@ a:visited{
     .nav-item-casdastro >p >span{
         display:none;
     }
+    .header-margin-right{
+        flex:0;    
+    
+    }
+    .header-margin-left{
+        flex:0;    
+    
+    }
+    .footer-margin-right{
+        flex:0;    
+       
+    }
+    .footer-margin-left{
+        flex:0;    
+       
+    }
 }
 
 @media (max-height : 450px){ 

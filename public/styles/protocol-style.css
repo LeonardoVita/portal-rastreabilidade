@@ -20,18 +20,34 @@
 } 
 .logo-portal{
     position: absolute;
-    top:5%;
+    top:6%;
     left: 8%;
     transform: translate(-50%, -50%);
-    font-size: calc(2px + 1vw);
+
+    display: flex;
+    flex-direction: row;
+    
 }
-.logo-portal > h1{
-    color: rgb(196, 60, 60);
+.logo-img{
+    width: 5vw;
+    
+}
+.logo-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2px;
+}
+.logo-text-container > h1{
+    color: rgb(196, 60, 60);    
     font-weight: 800;
     font-style: italic;
+    font-size: calc(6px + 0.5vw);
 }
-.logo-portal > h2{    
+.logo-text-container > h2{    
     font-weight: 800;
+    font-size: calc(6px + 0.5vw);
+    
 }
 
 .content{    

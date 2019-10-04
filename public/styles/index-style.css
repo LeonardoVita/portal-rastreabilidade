@@ -4,7 +4,7 @@
     flex: 1;
     min-height: 100vh;
 
-    background-image: url('https://i.imgur.com/oKDnE5W.jpg');
+    background-image: url('https://i.imgur.com/dANmLWH.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     
-    background-image: url('https://i.imgur.com/2ImRW7D.png');
+    background-image: url('https://i.imgur.com/BQVNROK.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,27 +33,56 @@
 }
 .home-inner{
     flex:10;
+    display: flex;
+    flex-direction: row;    
+     
+}
+.logo-container{
+     
     
-      
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center; 
 }
 .titulo-container{
-    transform: translateY(-100%);  
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top:11vh;
+
+   
+    
 }
-.titulo-container > h1 {
+.titulo-container-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    margin-top: 20vh;  
+    transform: translateY(-100%);
+}
+.logo-img{
+    width: 15vw; 
+    height: auto;   
+    z-index: 4;
+    margin-top: 20vh;  
+    transform: translateY(-100%);
+}
+.titulo-container-text > h2 {
     color: rgb(196, 60, 60);
     font-size: calc(15px + 2vw );
     
-    margin-top: 30vh;
+    
     font-weight: 800;
     font-style: italic;
 
     
 }
-.titulo-container > h2 {
+.titulo-container-text > h3 {
     color: white;
-    font-size: calc(20px + 5vw );
-    
-    margin:0;
+    font-size: calc(20px + 5vw );    
+   
     font-weight: 800;
     transform: translateY(-20%);
 }
@@ -64,15 +93,30 @@
 }
 
 @media (max-width : 700px){ 
-    .titulo-container > h1 {       
-        margin-top: 27vh;  
+    
+    .titulo-container-text{
+        
+        margin-top: 15vh;  
+        
+    }
+    .logo-img{          
+        
+        margin-top: 15vh;  
         
     }
 }
 
 @media (max-width : 450px){ 
-    .titulo-container > h1 {       
-        margin-top: 25vh;  
+    .logo-img{         
         
+        margin-top: 12vh;  
+        
+    } 
+    .titulo-container-text > h2 {
+        
+        font-size: calc(10px + 2vw ); 
+    }
+    .titulo-container-text > h3 {
+        font-size: calc(15px + 5vw ); 
     }
 }
