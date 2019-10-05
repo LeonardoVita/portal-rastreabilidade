@@ -4,7 +4,7 @@
     flex: 1;
     min-height: 100vh;
 
-    background-image: url('https://i.imgur.com/dANmLWH.jpg');
+    background-image: url('https://i.imgur.com/HDLtqe0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     
-    background-image: url('https://i.imgur.com/BQVNROK.png');
+    background-image: url('https://i.imgur.com/duiuUH1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -103,6 +103,17 @@
         
         margin-top: 15vh;  
         
+    }
+    .portal-rastreabilidade{
+        
+    
+        background-image: url('https://i.imgur.com/yNNSUmg.png');
+       
+        
+    }
+    
+    .background-corte{    
+        background-image: none;  
     }
 }
 
