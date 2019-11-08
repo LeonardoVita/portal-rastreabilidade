@@ -63,138 +63,280 @@
 
             <!-- FORM CONTAINER  -->
             <div id="protocol-form">
-                
+
 
                 <div class="protocol-form-inner container">
                     <div class="form">
                         <h2>Consulta</h2>
 
                         <form action="./result.html" method="get">
-                            <div class="form-group">
-                                <label for="inputProtocoloNome">Nome do protocolo</label>
-                                <input type="text" class="form-control" id="inputProtocoloNome" placeholder="Protocolo">
-                            </div>
                             <div class="form-row">
-                                <div class="form-group col-md-4 col-6">
-                                    <label for="inputProtocoloDesc">Descrição do protocolo</label>
-                                    <input type="text" class="form-control" id="inputProtocoloDesc"
-                                        placeholder="Descrição">
+                                <div class="form-group col-md-10">
+                                    <label for="inputProtocoloNome">Nome do protocolo</label>
+                                    <input type="text" class="form-control" id="inputProtocoloNome"
+                                        placeholder="Protocolo">
                                 </div>
-                                <div class="form-group col-md-4 col-6">
-                                    <label for="inputProtocoloMercado">Mercado do protocolo</label>
-                                    <input type="text" class="form-control" id="inputProtocoloMercado"
-                                        placeholder="Mercado">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputSegmento">Segmento do Protocolo</label>
-                                    <select id="inputSegmento" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Animal</option>
-                                        <option>Vegetal</option>
-                                    </select>
-                                </div>
+                                <p class="col-md-2 m-auto">
+                                    <button class="btn btn-success " type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        Filtros
+                                    </button>
+                                </p>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-4 col-6">
-                                    <label for="inputRaca">Raça</label>
-                                    <select id="inputRaca" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Girolando</option>
-                                        <option>Guzerá</option>
-                                        <option>Holandês</option>
-                                        <option>Nelore</option>
-                                        <option>Senepol</option>
-                                        <option>Charolês</option>
-                                        <option>sindi</option>
-                                        <option>Gir Leiteiro</option>
-                                        <option>Angus</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-2 col-6 my-auto">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                            value="Masculino" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                            Masculino
-                                        </label>
+                            <div class="collapse" id="collapseExample">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="inputProtocoloDesc">Descrição do protocolo</label>
+                                        <input type="text" class="form-control" id="inputProtocoloDesc"
+                                            placeholder="Descrição">
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="Feminino">
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Feminino
-                                        </label>
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="inputProtocoloMercado">Mercado do protocolo</label>
+                                        <input type="text" class="form-control" id="inputProtocoloMercado"
+                                            placeholder="Mercado">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputSegmento">Segmento do Protocolo</label>
+                                        <select id="inputSegmento" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Animal</option>
+                                            <option>Vegetal</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-6">
-                                    <label for="inputAddress2">Idade Mínima (Meses)</label>
-                                    <input type="number" class="form-control idade-meses" id="inputAddress2"
-                                        placeholder="Mínima">
+                                <div class="form-row">
+                                    <div class="form-group col-sm-4 col-6">
+                                        <label for="inputRaca">Raça</label>
+                                        <select id="inputRaca" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Girolando</option>
+                                            <option>Guzerá</option>
+                                            <option>Holandês</option>
+                                            <option>Nelore</option>
+                                            <option>Senepol</option>
+                                            <option>Charolês</option>
+                                            <option>sindi</option>
+                                            <option>Gir Leiteiro</option>
+                                            <option>Angus</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2 col-6 my-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="Masculino" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Masculino
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios2" value="Feminino">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Feminino
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <label for="inputAddress2">Idade Mínima (Meses)</label>
+                                        <input type="number" class="form-control idade-meses" id="inputAddress2"
+                                            placeholder="Mínima">
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <label for="inputAddress2">Idade Máxima (Meses)</label>
+                                        <input type="number" class="form-control idade-meses" id="inputAddress2"
+                                            placeholder="Máxima">
+                                    </div>
                                 </div>
-                                <div class="col-md-3 col-6">
-                                    <label for="inputAddress2">Idade Máxima (Meses)</label>
-                                    <input type="number" class="form-control idade-meses" id="inputAddress2"
-                                        placeholder="Máxima">
+
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="inputIdent">Necessidade de Identificação</label>
+                                        <select id="inputIdent" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Individual</option>
+                                            <option>Coletiva</option>
+                                            <option>Não precisa</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="inputTIdent">Tipo de Identificação</label>
+                                        <select id="inputTIdent" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Visual</option>
+                                            <option>Eletrônico</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="inputProducao">Tipo de Produção</label>
+                                        <select id="inputProducao" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Extensiva</option>
+                                            <option>Semi-intensiva</option>
+                                            <option>Intensiva</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="inputEspecie">Animal Especie</label>
+                                        <select id="inputEspecie" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Bovinos</option>
+                                            <option>Bubalinos</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPerfil">Perfil</label>
+                                        <select id="inputPerfil" class="form-control">
+                                            <option selected>Qualquer</option>
+                                            <option>Frigorifico</option>
+                                            <option>Produtor</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-6">
-                                    <label for="inputIdent">Necessidade de Identificação</label>
-                                    <select id="inputIdent" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Individual</option>
-                                        <option>Coletiva</option>
-                                        <option>Não precisa</option>                                        
-                                    </select>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label for="inputTIdent">Tipo de Identificação</label>
-                                    <select id="inputTIdent" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Visual</option>
-                                        <option>Eletrônico</option>
-                                        
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4 col-6">
-                                    <label for="inputProducao">Tipo de Produção</label>
-                                    <select id="inputProducao" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Extensiva</option>
-                                        <option>Semi-intensiva</option>
-                                        <option>Intensiva</option> 
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4 col-6">
-                                    <label for="inputEspecie">Animal Especie</label>
-                                    <select id="inputEspecie" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Bovinos</option>
-                                        <option>Bubalinos</option>                                        
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputPerfil">Perfil</label>
-                                    <select id="inputPerfil" class="form-control">
-                                        <option selected>Qualquer</option>
-                                        <option>Frigorifico</option>
-                                        <option>Produtor</option>                                        
-                                    </select>
-                                </div>
-                            </div>                            
-
-
                             <!-- SUBMIT CONTAINER  -->
                             <div class="form-submit-container">
                                 <input type="submit" value="Pesquisar" class="btn-submit">
                             </div>
-
                         </form>
+                        <div class="table-header">
+                            <div class="process-container">
+                                <h3>PROCESSO</h3>
+                            </div>
+                            <div class="data-container">
+                                <h3>DATA</h3>                                
+                            </div>
+                            <div class="estado-container">
+                                <h3>ESTADO</h3>                                
+                            </div>
+                            <div class="estatus-container">
+                                <h3>ESTATUS</h3>                                
+                            </div>
+                            <div class="empty-container"></div>
+                        </div>
+                        <div class="list-group">
+                            <a href="./details.html" class="list-group-item list-group-item-action">
+                                <div class="list-item-container">
+                                    <div class="list-process">
+                                        <p>50.00088/58</p>
+                                    </div>
+
+                                    <div class="list-data">
+                                        <p>20/08/2019</p>
+                                    </div>
+
+                                    <div class="list-estado">
+                                        <p>Rio de Janeiro</p>
+                                    </div>
+
+                                    <div class="list-stats">
+                                        <p>Concluido</p>
+                                    </div>
+
+                                    <div class="btn-details-container">
+                                        <label>Detalhes</label>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./details.html" class="list-group-item list-group-item-action">
+                                <div class="list-item-container">
+                                    <div class="list-process">
+                                        <p>50.00088/58</p>
+                                    </div>
+
+                                    <div class="list-data">
+                                        <p>20/08/2019</p>
+                                    </div>
+
+                                    <div class="list-estado">
+                                        <p>Rio de Janeiro</p>
+                                    </div>
+
+                                    <div class="list-stats">
+                                        <p>Concluido</p>
+                                    </div>
+
+                                    <div class="btn-details-container">
+                                        <label>Detalhes</label>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./details.html" class="list-group-item list-group-item-action">
+                                <div class="list-item-container">
+                                    <div class="list-process">
+                                        <p>50.00088/58</p>
+                                    </div>
+
+                                    <div class="list-data">
+                                        <p>20/08/2019</p>
+                                    </div>
+
+                                    <div class="list-estado">
+                                        <p>Rio de Janeiro</p>
+                                    </div>
+
+                                    <div class="list-stats">
+                                        <p>Concluido</p>
+                                    </div>
+
+                                    <div class="btn-details-container">
+                                        <label>Detalhes</label>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./details.html" class="list-group-item list-group-item-action">
+                                <div class="list-item-container">
+                                    <div class="list-process">
+                                        <p>50.00088/58</p>
+                                    </div>
+
+                                    <div class="list-data">
+                                        <p>20/08/2019</p>
+                                    </div>
+
+                                    <div class="list-estado">
+                                        <p>Rio de Janeiro</p>
+                                    </div>
+
+                                    <div class="list-stats">
+                                        <p>Concluido</p>
+                                    </div>
+
+                                    <div class="btn-details-container">
+                                        <label>Detalhes</label>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./details.html" class="list-group-item list-group-item-action">
+                                <div class="list-item-container">
+                                    <div class="list-process">
+                                        <p>50.00088/58</p>
+                                    </div>
+
+                                    <div class="list-data">
+                                        <p>20/08/2019</p>
+                                    </div>
+
+                                    <div class="list-estado">
+                                        <p>Rio de Janeiro</p>
+                                    </div>
+
+                                    <div class="list-stats">
+                                        <p>Concluido</p>
+                                    </div>
+
+                                    <div class="btn-details-container">
+                                        <label>Detalhes</label>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+
                 </div>
 
-                
+
                 <!-- <a class="link-merlion" href="http://www.merlion-si.com.br/" target="_blank" rel="noopener noreferrer">
                     <h2 class="text-merlion">Merlion TI</h2>
                 </a> -->
