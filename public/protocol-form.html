@@ -8,8 +8,11 @@
     <title>Portal Rastreabilidade</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, height=device-height'>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,800i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/protocol-style.css'>
+
 </head>
 
 <body>
@@ -64,60 +67,115 @@
 
                 <div class="protocol-form-inner">
                     <div class="form">
-                        <h2>Formulário</h2>
+                        <h2>Consulta</h2>
 
-                        <form class="form-container" action="./result.html" method="get">
-
-                            <!-- CAIXA CONTAINERS -->
-                            <div class="form-caixa-wrap">
-                                <div class="form-caixa-container">
-                                    <div class="caixa-container">
-                                        <label for="caixa1">Caixa 1</label>
-                                        <select name="caixa1">
-                                            <option value="valor1">Valor 1</option>
-                                            <option value="valor2" selected>Valor 2</option>
-                                            <option value="valor3">Valor 3</option>
-                                        </select>
+                        <form action="./result.html" method="get">
+                            <div class="form-group">
+                                <label for="inputProtocoloNome">Nome do protocolo</label>
+                                <input type="text" class="form-control" id="inputProtocoloNome" placeholder="Protocolo">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputProtocoloDesc">Descrição do protocolo</label>
+                                    <input type="text" class="form-control" id="inputProtocoloDesc"
+                                        placeholder="Descrição">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputProtocoloMercado">Mercado do protocolo</label>
+                                    <input type="text" class="form-control" id="inputProtocoloMercado"
+                                        placeholder="Mercado">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputSegmento">Segmento do Protocolo</label>
+                                    <select id="inputSegmento" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Animal</option>
+                                        <option>Vegetal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label for="inputRaca">Raça</label>
+                                    <select id="inputRaca" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Girolando</option>
+                                        <option>Guzerá</option>
+                                        <option>Holandês</option>
+                                        <option>Nelore</option>
+                                        <option>Senepol</option>
+                                        <option>Charolês</option>
+                                        <option>sindi</option>
+                                        <option>Gir Leiteiro</option>
+                                        <option>Angus</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 my-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="Masculino" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="Feminino">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Feminino
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="form-caixa-container">
-                                    <div class="caixa-container">
-                                        <label for="caixa2">Caixa 2</label>
-                                        <select name="caixa2">
-                                            <option value="valor1">Valor 1</option>
-                                            <option value="valor2" selected>Valor 2</option>
-                                            <option value="valor3">Valor 3</option>
-                                        </select>
-                                    </div>
+                                <div class="col-md-3 ">
+                                    <label for="inputAddress2">Idade Mínima (Meses)</label>
+                                    <input type="number" class="form-control idade-meses" id="inputAddress2"
+                                        placeholder="Mínima">
                                 </div>
-                            </div>
-                            <!-- DATES CONTAINERS  -->
-                            <div class="form-date-container">
-                                <div class="date-container">
-                                    <label for="date">Date 1 ( DE )</label>
-                                    <input type="date" id="data1" />
-                                </div>
-                                <div class="date-container">
-                                    <label for="date">Date 2 ( ATÉ )</label>
-                                    <input type="date" id="data2" />
+                                <div class="col-md-3 ">
+                                    <label for="inputAddress2">Idade Máxima (Meses)</label>
+                                    <input type="number" class="form-control idade-meses" id="inputAddress2"
+                                        placeholder="Máxima">
                                 </div>
                             </div>
 
-                            <!-- TEXT CONTAINERS  -->
-                            <div class="form-text-container">
-                                <div class="text-container">
-                                    <label for="text1">Texto 1</label>
-                                    <input type="text" id="text1" />
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputRaca">Necessidade de Identificação</label>
+                                    <select id="inputRaca" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Individual</option>
+                                        <option>Coletiva</option>
+                                        <option>Não precisa</option>                                        
+                                    </select>
                                 </div>
-                                <div class="text-container">
-                                    <label for="text2">Texto 2</label>
-                                    <input type="text" id="text2" />
+                                <div class="form-group col-md-6">
+                                    <label for="inputRaca">Tipo de Identificação</label>
+                                    <select id="inputRaca" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Visual</option>
+                                        <option>Eletrônico</option>
+                                        
+                                    </select>
                                 </div>
-                                <div class="text-container">
-                                    <label for="text3">Texto 3</label>
-                                    <input type="text" id="text3" />
+                                <div class="form-group col-md-6">
+                                    <label for="inputRaca">Tipo de Produção</label>
+                                    <select id="inputRaca" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Extensiva</option>
+                                        <option>Semi-intensiva</option>
+                                        <option>Intensiva</option> 
+                                    </select>
                                 </div>
-                            </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputRaca">Animal Especie</label>
+                                    <select id="inputRaca" class="form-control">
+                                        <option selected>Qualquer</option>
+                                        <option>Bovinos</option>
+                                        <option>Bubalinos</option>                                        
+                                    </select>
+                                </div>
+                            </div>                            
+
 
                             <!-- SUBMIT CONTAINER  -->
                             <div class="form-submit-container">
@@ -136,6 +194,16 @@
 
         </div>
     </div>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
