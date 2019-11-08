@@ -37,7 +37,8 @@ a{
     color:inherit;       
 }
 a:visited{
-    color: inherit;}
+    color: inherit;
+}
 
 
 
@@ -182,7 +183,7 @@ a:visited{
 
 }
 .footerleft:hover{
-    
+    text-decoration: none;
     opacity: 1;     
 
 }

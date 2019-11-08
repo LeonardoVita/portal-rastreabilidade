@@ -104,7 +104,7 @@
 .form-submit-container{
     display: flex;   
     justify-content: center;    
-    transform: translateY(50%);
+    
 }
 .btn-submit{
     padding: 1vh 4vw;
@@ -126,6 +126,113 @@
 
 label{
     font-size: calc(8px + 0.5vw);
+}
+.table-header{
+    padding:10px;
+    display: flex;         
+}
+.table-header h3{
+    font-size: calc(5px + 1vw);
+}
+.process-container{
+    flex:5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 10px 5px;
+}
+
+.data-container{
+    flex:6;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0; 
+      
+}
+
+.estado-container{
+    
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.estatus-container{
+    flex:5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.empty-container{
+    flex:3;
+    
+}
+
+.list-group-item{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+}
+.list-group-item:hover{
+    background: #00b4f5;
+    color: white;
+}
+.list-item-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.list-process{
+    flex:2;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-data{
+    flex:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-estado{
+    flex:2;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-stats{
+    flex:2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-details-container{
+    flex:1;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: calc(8px + 0.5vw);
+    font-weight: 800;
+    color:white;
+    background: #0a780e;
+    padding: 0.5vh 0.3vw;
+    border-radius: 15px;
+}
+.btn-details-container label{
+    cursor: pointer;
 }
 
 .link-merlion{
@@ -163,6 +270,24 @@ label{
         box-shadow: 0 2px 0 #0a780e;      
     }        
     
+}
+@media (max-width : 800px){     
+    .estado-container{    
+        display: none;
+    }  
+
+    .list-estado{
+        display: none;        
+    }  
+}
+
+@media (max-width : 600px){     
+    .data-container{
+        display: none;          
+    }
+    .list-data{
+        display: none;
+    }
 }
 
 @media (max-width : 530px){

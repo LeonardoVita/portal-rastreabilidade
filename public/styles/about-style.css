@@ -37,19 +37,16 @@
      
 }
 
-.about-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80%;
+.about-container{   
+    
     padding: 15px 8vw;
     background: #f7f7f7;
-    box-shadow: 0 -4px 10px #0a780e;
-    align-items: center;
+    box-shadow: 0 -4px 10px #0a780e;    
 }
 .about-container > h2{
     margin: 10px;
     font-size: calc(15px + 2vw);
+    white-space: normal;
 }
 .aboutus-img{
     float: left;
@@ -63,6 +60,10 @@
 
 .consulta-container p {
     margin: 0 0 2vh 0;
+    font-size: calc(8px + 0.6vw);
+}
+.protocolo-container p {    
+    font-size: calc(8px + 0.6vw);
 }
 
 .link-consulta{
