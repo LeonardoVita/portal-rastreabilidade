@@ -1,0 +1,139 @@
+.portal-rastreabilidade{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+
+    background-image: url('https://i.imgur.com/9LbIBiPl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.logo-portal{
+    position: absolute;
+    top:6%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-img{
+    width: 5vw;
+    
+}
+.about-margin-left{
+    flex:1;
+    
+}
+.about-inner{
+    flex:4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+     
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 15px 8vw;
+    background: #f7f7f7;
+    box-shadow: 0 -4px 10px #0a780e;
+    align-items: center;
+}
+.about-container > h2{
+    margin: 10px;
+    font-size: calc(15px + 2vw);
+}
+.aboutus-img{
+    float: left;
+    width: 10vw;
+    margin-right: 10px;
+}
+.aboutus-container > p{
+    margin: 2vh 0;
+    font-size: calc(8px + 0.8vw);
+} 
+
+.consulta-container p {
+    margin: 0 0 2vh 0;
+}
+
+.link-consulta{
+    font-size: calc(10px + 0.5vw);
+    color: #064708 !important;
+    font-weight: 700;
+}
+.link-consulta:hover{
+    text-decoration: underline;
+}
+.link-protocolo{
+    font-size: calc(10px + 0.5vw);
+    color: #064708 !important;
+    font-weight: 700;
+}
+.link-protocolo:hover{
+    text-decoration: underline;
+}
+.logo-container{     
+    
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center; 
+}
+.titulo-container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top:11vh;
+
+   
+    
+}
+.titulo-container-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    margin-top: 20vh;  
+    transform: translateY(-100%);
+}
+
+.titulo-container-text > h2 {
+    color: rgb(196, 60, 60);
+    font-size: calc(15px + 2vw );
+    
+    
+    font-weight: 800;
+    font-style: italic;
+
+    
+}
+.titulo-container-text > h3 {
+    color: white;
+    font-size: calc(20px + 5vw );    
+   
+    font-weight: 800;
+    transform: translateY(-20%);
+}
+
+.about-margin-right{
+    flex:1;
+    
+}
+
+@media (max-width : 700px){    
+    
+    
+}
+
+@media (max-width : 450px){ 
+    
+}

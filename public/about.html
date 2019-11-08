@@ -9,16 +9,16 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, height=device-height'>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./styles/index-style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/about-style.css'>
 
 </head>
 
 <body>
 
     <div class="portal-rastreabilidade" id="portal-rastreabilidade">
-        <div class="background-corte"></div>
+
         <div class="logo-portal">
-            <h1><img src="./src/icons/pin png 120x120px.png" alt="Portal Rastreabilidade" class="logo-img" /></h1>            
+            <h1><img src="./src/icons/pin png 120x120px.png" alt="Portal Rastreabilidade" class="logo-img" /></h1>
         </div>
         <!-- HEADER NAVEGATION -->
         <div class="header">
@@ -32,7 +32,7 @@
                             <p>início</p>
                         </li>
                     </a>
-                    <a class="nav-link" href="./about.html">
+                    <a class="nav-link">
                         <li class="nav-item">
                             <p>Sobre</p>
                         </li>
@@ -42,7 +42,7 @@
                             <p>Contato</p>
                         </li> -->
                     </a>
-                    <a class="cadastro nav-link" href="#">
+                    <a class="cadastro nav-link" href="./protocol-form.html">
                         <li class="nav-item nav-item-casdastro">
                             <p><span>CADASTRE SEU &nbsp;</span> PROTOCOLO</p>
                         </li>
@@ -57,24 +57,47 @@
         <!-- SITE CONTENT  -->
         <div class="content" id="content">
 
-            <!-- HOMEPAGE  -->
+            <!-- ABOUTPAGE  -->
             <div id="home">
-                <div class="home-margin-left"></div>
+                <div class="about-margin-left"></div>
 
-                <div class="home-inner">
-                    <div class="logo-container">
-                        
-                        <div class="titulo-container">
-                            <!-- <img src="./src/icons/pin png 120x120px.png" alt="Portal Rastreabilidade" class="logo-img"> -->
-                            <div class="titulo-container-text">
-                                <h2>Portal </h2>
-                                <h3>Rastreabilidade</h3>
-                            </div>
+                <div class="about-inner">
+                    <div class="about-container">
+                        <h2>Sobre o Portal de Rastreabilidade</h2>
+
+                        <div class="aboutus-container">
+                            <img class="aboutus-img" src="src/icons/pin png 120x120px.png" alt="portal rastreabilidade logo">
+                            <p>
+                                Entidade privada, dedicada em dar transparência aos consumidores e demais interessados
+                                sobre os Padrões Privados de Produção.
+                            </p>
+                            <p>
+                                Aqui você encontra as garantias estabelecidas nos mais
+                                diversos programas de qualidade de alimentos e a forma de atendimento de requisitos de
+                                produção específicos como bem estar animal, garantia de origem, uso de insumos,
+                                agroquímicos, fertilizantes, uso de medicamentos, entre outros.
+                            </p>
                         </div>
+                        <div class="consulta-container">
+                            <p>
+                                - Caso queira consultar maiores informações sobre os Padrões Privados, acesse a página de
+                                <a href="protocol-form.html" class="link-consulta" >Consulta</a> 
+                            </p>
+
+                        </div>
+                        <div class="protocolo-container">
+                            <p>
+                                - Para registrar seu Padrão Privado conosco entre em cadastre-se no menu superior, clicando em
+                                <a href="#" class="link-protocolo">Cadastre seu protocolo</a>
+                            </p>
+                            
+                        </div>
+
+                        
                     </div>
                 </div>
 
-                <div class="home-margin-right"></div>
+                <div class="about-margin-right"></div>
             </div>
 
         </div>
@@ -85,7 +108,7 @@
 
             <div class="footer-inner">
 
-                <div class="footerleft" >
+                <div class="footerleft">
                     <div class="footerleft-texto">
                         <p>Consulta de dados em um só lugar</p>
 
@@ -94,7 +117,7 @@
                         <img class="footer-img" src="./src/icons/boi.svg">
                         <img class="footer-img" src="./src/icons/Lupa.svg">
                     </div>
-                </div>       
+                </div>
 
             </div>
 
@@ -102,7 +125,7 @@
         </div>
 
     </div>
-    
+
 </body>
 
 </html>
