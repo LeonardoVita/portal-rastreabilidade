@@ -177,7 +177,13 @@ a:visited{
     flex:1;
     padding:2vh 1vw 10px 1vw;
     background: #f7f7f7;
-    border-radius: 20px 20px 0 0;    
+    border-radius: 20px 20px 0 0; 
+    opacity: 0.7;   
+
+}
+.footerleft:hover{
+    
+    opacity: 1;     
 
 }
 .footerleft-texto{
