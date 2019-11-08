@@ -56,14 +56,12 @@
        
 }  
 .protocol-form-margin-left{
-    flex:1
+    flex:0
 }
 .protocol-form-inner{
-    display: flex;
-    flex: 10;
-    padding: 5px;
+    
     padding-top: 5vh;
-
+    margin-bottom: 5vh;
     align-items: flex-start;
     justify-content: center;
     overflow-y: auto;
@@ -71,7 +69,7 @@
 }
 
 .protocol-form-margin-right{
-    flex:1
+    flex:0
 }
 
 .form{    
