@@ -7,8 +7,8 @@
     <link rel="shortcut icon" href="./src/icons/pin icon.ico" />
     <title>Portal Rastreabilidade</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, height=device-height'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,800i&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/details-style.css'>
@@ -68,52 +68,34 @@
 
                 <div class="details-inner">
                     <div class="details-container">
-                        <div class="details-header">
-                            <h2>Detalhes</h2>
-                            <div class="datails-date-container">
-                                <div class="details-date">
-                                    <p>De</p>
-                                    <input type="date" name="details-date" id="details-date" />
-                                </div>
-                                <div class="details-date">
-                                    <p>Até</p>
-                                    <input type="date" name="details-date" id="details-date" />
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <h3>Carne Angus Certificada</h3>
                             </div>
-                        </div>
-                        <div class="details-info-container">
-                            <div class="details-info">
-                                <h4>Orgão/Entidade vinculada</h4>
-                                <p>texto mais longo aqui</p>
+                            <div class="form-group col-md-8">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Programa de Qualidade de Carne da Raça Angus garantindo maciez e padronização dos
+                                    cortes certificados.
+                                </p>
                             </div>
-                            <div class="details-info">
-                                <h4>Unidade gestora</h4>
-                                <p>texto mais longo aqui</p>
+                            <div class="form-group col-md-4">
+                                <h4>Mercado</h4>
+                                <p>Mercado interno,externo</p>
                             </div>
-                            <div class="details-info">
-                                <h4>Numero de licitação</h4>
-                                <p>texto mais longo aqui</p>
+                            <div class="form-group col-6 col-md-4">
+                                <h5>Identificação</h5>
+                                <p>Individual</p>
                             </div>
-                            <div class="details-info">
-                                <h4>contato no órgão</h4>
-                                <p>texto mais longo aqui</p>
+                            <div class="form-group col-6 col-md-4">
+                                <h5>Tipo de Identificação </h5>
+                                <p>Qualquer</p>
                             </div>
-                            <div class="details-info">
-                                <h4>modalidade</h4>
-                                <p>texto mais longo aqui</p>
+                            <div class="form-group col-md-4">
+                                <h5>Tipo de Produção </h5>
+                                <p>Qualquer</p>
                             </div>
-                            <div class="details-info">
-                                <h4>Situação</h4>
-                                <p>texto mais longo aqui</p>
-                            </div>
-                            <div class="details-info">
-                                <h4>Processo</h4>
-                                <p>texto mais longo aqui</p>
-                            </div>
-                            <div class="details-info">
-                                <h4>Objeto</h4>
-                                <p>texto mais longo aqui</p>
-                            </div>
+
                         </div>
 
                         <!-- COLLAPSE BOOTSTRAP  -->
@@ -123,24 +105,57 @@
                                     <div class="card-header" id="headingOne" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <h5 class="mb-0">
-                                            Texto 1
+                                            Caracteristicas
                                         </h5>
                                     </div>
 
                                     <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor
-                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor,
-                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                            nesciunt
-                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="container row mb-4">
+                                                <h4>Espécie: &nbsp;</h4>
+                                                <h4>bovino</h4>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Raça: &nbsp;</p>
+                                                    <p>Angus</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Sexo: &nbsp;</p>
+                                                    <p>Masculino</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Mínima: &nbsp;</p>
+                                                    <p>2</p>
+                                                    <p>&nbsp;meses</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Máxima: &nbsp;</p>
+                                                    <p>8</p>
+                                                    <p>&nbsp;meses</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Raça: &nbsp;</p>
+                                                    <p>Angus</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Sexo: &nbsp;</p>
+                                                    <p>Feminino</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Mínima: &nbsp;</p>
+                                                    <p>1</p>
+                                                    <p>&nbsp;meses</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-3">
+                                                    <p class="bolder">Máxima: &nbsp;</p>
+                                                    <p>12</p>
+                                                    <p>&nbsp;meses</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -148,23 +163,34 @@
                                     <div class="card-header" id="headingTwo" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         <h5 class="mb-0">
-                                            Texto 2
+                                            Industria
                                         </h5>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor
-                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor,
-                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                            nesciunt
-                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="row mb-3">
+                                                <div class="d-flex flex-row col-6 col-md-4 mb-2">
+                                                    <p class="bolder">Nome: &nbsp;</p>
+                                                    <p>Abatedouro Acrelandia</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-4 mb-2">
+                                                    <p class="bolder">Tipo: &nbsp;</p>
+                                                    <p>Abatedouro</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-4 mb-2">
+                                                    <p class="bolder">Município: &nbsp;</p>
+                                                    <p>Brasília</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-4 mb-2">
+                                                    <p class="bolder">Uf: &nbsp;</p>
+                                                    <p>Acre</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-6 col-md-4 mb-2">
+                                                    <p class="bolder">Telefone: &nbsp;</p>
+                                                    <p>(61) 99840-3333</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -173,30 +199,38 @@
                                         data-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
                                         <h5 class="mb-0">
-                                            Texto 3
+                                            Perfis
                                         </h5>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor
-                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor,
-                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                            nesciunt
-                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="row mb-3">
+                                                <div class="d-flex flex-row col-12  mb-2">
+                                                    <p class="bolder">Perfil: &nbsp;</p>
+                                                    <p>Produtor</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-md-8 mb-2">
+                                                    <p class="bolder">Requisito de Adesão: &nbsp;</p>
+                                                    <p>Esses são os requisitos de adesão!</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-md-8 mb-2">
+                                                    <p class="bolder">Requisitos Certificação: &nbsp;</p>
+                                                    <p>Esses são os requisitos de certificação</p>
+                                                </div>
+                                                <div class="d-flex flex-row col-md-8 mb-2">
+                                                    <p class="bolder">Requisitos Habilitação: &nbsp;</p>
+                                                    <p>Esses são os requisitos para Habilitação</p>
+                                                </div>                                                
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="btn-link-details" href="./result.html"><label class="btn-label-details">Voltar</label></a>
+                    <a class="btn-link-details" href="protocol-form.html"><label
+                            class="btn-label-details">Voltar</label></a>
                 </div>
 
                 <div class="details-margin-right"></div>
@@ -209,14 +243,14 @@
     </div>
 
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
 </body>
