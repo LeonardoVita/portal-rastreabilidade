@@ -54,7 +54,8 @@
     display: flex;    
     height: 90vh;
        
-}  
+}
+
 .protocol-form-margin-left{
     flex:0
 }
@@ -65,6 +66,7 @@
     align-items: flex-start;
     justify-content: center;
     overflow-y: auto;
+    
         
 }
 
