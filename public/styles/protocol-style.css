@@ -136,18 +136,27 @@ label{
 .table-header h3{
     font-size: calc(5px + 1vw);
 }
-.process-container{
-    flex:5;
+.img-container{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 10px 0;
+}
+
+.nome-container{
+    flex:10;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    padding: 10px 5px;
+    padding: 10px 0;
 }
 
-.data-container{
-    flex:6;
+.perfil-container{
+    flex:5;
     
     display: flex;
     flex-direction: column;
@@ -156,17 +165,8 @@ label{
       
 }
 
-.estado-container{
-    
-    flex:5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.estatus-container{
-    flex:5;
+.ind-container{
+    flex:10;
     
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ label{
     padding: 10px 0;
 }
 .empty-container{
-    flex:3;
+    flex:2;
     
 }
 
@@ -192,51 +192,65 @@ label{
     display: flex;
     flex-direction: row;
 }
-
-.list-process{
-    flex:2;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.list-data{
+.list-img{
     flex:3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.list-estado{
-    flex:2;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.list-stats{
-    flex:2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.btn-details-container{
-    flex:1;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
 
+}
+.logo-res{
+    width: calc(20px + 4vw);  
+    height: calc(30px + 2vh);  
+}
+.list-name{
+    flex:10;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list-perfil{
+    flex:5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list-ind{
+    flex:10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-details-container{
+    flex:2;
+    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
     font-size: calc(8px + 0.5vw);
     font-weight: 800;
     color:white;
     background: #0a780e;
-    padding: 0.5vh 0.3vw;
+    
     border-radius: 15px;
+    height: calc(30px + 2vh); 
 }
-.btn-details-container label{
+.detail-btn{
     cursor: pointer;
-}
 
+    padding: 10px
+}
+p{
+    font-size: calc(8px + 0.8vw)!important;   
+}
 .link-merlion{
     position: absolute;
     bottom: 2%;
@@ -274,20 +288,20 @@ label{
     
 }
 @media (max-width : 800px){     
-    .estado-container{    
+    .ind-container{
         display: none;
-    }  
-
-    .list-estado{
-        display: none;        
-    }  
+    } 
+    .list-ind{
+        display: none; 
+    }
+      
 }
 
 @media (max-width : 600px){     
-    .data-container{
+    .perfil-container{
         display: none;          
     }
-    .list-data{
+    .list-perfil{
         display: none;
     }
 }
